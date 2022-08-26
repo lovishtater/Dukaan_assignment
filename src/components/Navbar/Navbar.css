@@ -1,0 +1,41 @@
+.navbar {
+  max-height: 5.5rem;
+  justify-content: space-between;
+}
+
+.navbar .nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar a {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+.button {
+  padding: 0.75rem 1.5rem;
+  background-color: #ffffff;
+  color: #146eb4;
+  border-radius: 0.25rem;
+}
+
+@media screen and (max-width: 445px) {
+  .navbar {
+    padding-top: 1rem;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .navbar a {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    margin: 0.25rem;
+  }
+
+  .button {
+    padding: 0.5rem 1rem;
+  }
+}

@@ -1,0 +1,276 @@
+.slogan-box {
+  margin-top: 2.875rem;
+  background-color: #ffffff;
+  border-radius: 0.25rem;
+
+  box-shadow: 0px 0px 10px 1px rgba(26, 24, 30, 0.06);
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(26, 24, 30, 0.06);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(26, 24, 30, 0.06);
+}
+
+.slogan-box .top,
+.slogan-box .center,
+.slogan-box .bottom {
+  max-width: 46rem;
+  margin: 3rem auto;
+  padding-top: 3rem;
+}
+
+.heading {
+  font-family: "Galano Grotesque SemiBold";
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 2.625rem;
+  letter-spacing: -0.04rem;
+  color: #1a181e;
+  margin-bottom: 1rem;
+}
+
+.slogan-box .top p {
+  margin-bottom: 2rem;
+
+  color: #4d4d4d;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+/* ================== Form ================ */
+
+.search-box {
+  display: inline-block;
+  position: relative;
+}
+
+.search-box * {
+  display: block;
+}
+
+.search-box label {
+  line-height: 1.5rem;
+  color: #4d4d4d;
+  margin-bottom: 0.5rem;
+}
+
+.search-box .clear {
+  position: absolute;
+  right: 0.5rem;
+  top: 2.5rem;
+  cursor: pointer;
+}
+
+.search-box input[type="text"] {
+  border: 1px solid #d9d9d9;
+  height: 2.25rem;
+  width: 18rem;
+  padding: 0 1.75rem 0 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.submit {
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  background-color: #146eb4;
+  color: #ffffff;
+
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1.5rem;
+
+  cursor: pointer;
+}
+
+.center_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  height: 2.75rem;
+}
+
+.slogan-box_heading {
+  padding-top: 1rem;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.center_top button {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+
+  background-color: transparent;
+  color: #146eb4;
+  border: 1px solid #146eb4;
+  border-radius: 0.25rem;
+  padding: 0.25rem 1rem;
+
+  cursor: pointer;
+}
+
+.slogans {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.slogan-box .center,
+.slogan-box .bottom {
+  border-top: 1px solid #d9d9d9;
+}
+
+@media screen and (max-width: 500px) {
+  .top .heading {
+    font-size: 1.75rem;
+    line-height: 2rem;
+    letter-spacing: -0.04rem;
+  }
+
+  .slogan-box .top p {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  form label {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  form .clear {
+    top: 2rem;
+  }
+
+  form input[type="submit"] {
+    font-size: 1rem;
+    line-height: 1.25rem;
+
+    padding: 0.5rem 1rem;
+  }
+
+  .slogan-box_heading {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+
+  .card {
+    width: 18rem;
+  }
+}
+
+@media screen and (max-width: 756px) {
+  .slogans {
+    margin-top: 1.5rem;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.pages,
+.prev,
+.next {
+  color: #146eb4;
+  cursor: pointer;
+}
+
+.prev_arrow {
+  transform: rotate(-180deg);
+}
+
+.prev,
+.next {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  display: flex;
+  align-items: center;
+
+  background: transparent;
+  border: none;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.pages > span {
+  display: inline-flex;
+  text-align: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0.5rem;
+  margin:  0 0.25rem;
+}
+
+.pages > span:hover {
+  border: 1px solid #146eb4;
+}
+
+.active {
+  background: #146eb4;
+  color: #ffffff;
+}
+
+.card_group {
+  position: relative;
+}
+
+.tooltip {
+  position: absolute;
+  top: 1rem;
+  background-color: #4d4d4d;
+  color: #ffffff;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  height: 1.75rem;
+  width: 6.625rem;
+  border-radius: 0.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  display: none;
+}
+
+.card_group:nth-of-type(2n + 1) .tooltip {
+  left: -7rem;
+}
+
+.card_group:nth-of-type(2n) .tooltip {
+  right: -7rem;
+}
+
+.card_group:hover .tooltip {
+  display: flex;
+}
+
+.card {
+  background-color: #f2f2f2;
+  border: 0.25rem;
+  height: 3.75rem;
+  width: 22rem;
+  display: flex;
+  align-items: center;
+
+  padding: 0.5rem 1rem;
+
+  line-height: 1.375rem;
+  color: #1a181e;
+
+  cursor: pointer;
+}
+
+
+.pagination {
+  padding-bottom: 2rem;
+  justify-content: space-around;
+}

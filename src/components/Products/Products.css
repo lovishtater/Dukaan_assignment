@@ -1,0 +1,46 @@
+.products-box {
+  margin: 5rem auto;
+}
+
+.products-box h2.heading {
+  letter-spacing: -0.04em;
+  margin-bottom: 3rem;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.product_card {
+  max-width: 22rem;
+}
+
+.product_card .heading {
+  margin: 1rem 0 0.25rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+@media screen and (max-width: 755px) {
+  .products-box h2.heading {
+    text-align: center;
+  }
+
+  .product_card {
+    margin-bottom: 2rem;
+  }
+
+  .products {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 380px) {
+
+  .product_card,
+  .product_card img {
+    max-width: 18rem;
+  }
+}

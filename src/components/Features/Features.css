@@ -1,0 +1,38 @@
+.features_box{
+    background-color: #F3F9FA;
+}
+
+.feature {
+  color: #1a181e;
+  width: 22rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.icon,
+h4 {
+  margin-bottom: 1.5rem;
+}
+
+.feature p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+  color: #4d4d4d;
+}
+
+@media screen and (max-width: 500px) {
+  .feature {
+    width: 18rem;
+  }
+}
+
+@media screen and (max-width: 739.5px) {
+  .feature p {
+    margin-bottom: 2rem;
+  }
+}
